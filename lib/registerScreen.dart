@@ -407,8 +407,8 @@ class CustomTextFormField extends StatelessWidget {
           if (value.contains(RegExp(r'[A-Z]')) ||
               value.contains(RegExp(r'[a-z]'))) {
             return "Age can't contain letters";
-          } else if (int.parse(value) > 14 || int.parse(value) < 6) {
-            return "Age isn't in the specified range [7-13]";
+          } else if (int.parse(value) > 14 || int.parse(value) < 7) {
+            return "Age isn't in the specified range [7-14]";
           }
         }
         return null;
